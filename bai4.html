@@ -1,0 +1,31 @@
+<html>
+<body>
+    <script>
+    function validate(){
+        var username = document.getElementById ("username") .value;
+        var password = document.getElementById("password").value;
+        var re_passwond = document.getElementByIa("re-passwond").value;
+
+        if(username ==""){
+            alert("Thiếu tên");
+            return false;
+        }
+        if(password ==""){
+            alert("Thiếu pass");
+            return false;
+        }
+        if(re_passwond != password){
+            alert("Pw không khớp");
+            return false;
+        }
+        return true;
+    }
+    </script>
+    <form method="post" action="">
+        Username: <input type="text" value="" name="username" id="username"/> <br/>
+        Password: <input type="text" value="" name="password" id="password"> <br/>
+        Re Password: <input type="text value= name="re-password id="re-password"/><br/>
+        <input type="submit" value="Register" onclick="validate()" />
+    </form>
+</body>
+</html>
